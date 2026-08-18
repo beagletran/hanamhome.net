@@ -26,13 +26,19 @@ body {
   transform: translate(-50%, -50%);
 
   color: white;
-  font-size: 36px;
+
+  /* Tự động điều chỉnh theo kích thước màn hình */
+  font-size: clamp(18px, 5vw, 36px);
+
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   text-align: center;
 
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
-  white-space: nowrap;
+
+  /* Cho phép xuống dòng trên màn hình nhỏ */
+  width: 90%;
+  max-width: 900px;
 }
 </style>
 
